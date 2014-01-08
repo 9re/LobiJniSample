@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="51dp"
+    android:layout_height="48dp" >
+
+    <ImageButton
+        android:id="@+id/lobi_action_bar_button_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/lobi_action_bar_new_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="@dimen/lobi_margin_low"
+        android:layout_marginTop="@dimen/lobi_margin_low"
+        android:src="@drawable/lobi_icn_new"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lobi_action_bar_new_text"
+        style="@style/lobi_textview_black_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/lobi_action_bar_new_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@drawable/lobi_balloon_top_news"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/lobi_action_bar_separator_helper"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/lobi_divider_actionbar" />
+    </FrameLayout>
+
+</FrameLayout>

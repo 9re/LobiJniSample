@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/lobi_button_mini"
+    android:layout_height="@dimen/lobi_button_mini"
+    android:duplicateParentState="true" >
+
+    <ImageView
+        android:id="@+id/lobi_chat_edit_picture_thumbnail"
+        android:layout_width="@dimen/lobi_button_mini"
+        android:layout_height="@dimen/lobi_button_mini"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/lobi_chat_edit_shout_image"
+        android:layout_width="@dimen/lobi_button_mini"
+        android:layout_height="@dimen/lobi_button_mini"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/lobi_button_s_white_selector"
+        android:duplicateParentState="true"
+        android:scaleType="center"
+        android:src="@drawable/lobi_icn_btn_chat_shout" />
+
+</FrameLayout>

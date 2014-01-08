@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lobi="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.kayac.libnakamap.components.ActionBar
+        android:id="@+id/lobi_action_bar"
+        style="@style/lobi_action_bar"
+        lobi:lobi_content_type="lobi_backable"
+        lobi:lobi_text="@string/lobi_settings" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lobi_bg_light_repeat"
+                android:orientation="vertical" >
+
+                <com.kayac.libnakamap.components.SectionView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_section_title="@string/lobi_account" />
+
+                <com.kayac.libnakamap.components.ListRow
+                    android:id="@+id/lobi_setting_general_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_two_line"
+                    lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                    lobi:lobi_leftContentLayoutId="@layout/lobi_list_row_content_framed_icon_m"
+                    lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_arrow" />
+
+                <com.kayac.libnakamap.components.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!-- 検索結果に表示 -->
+
+                <LinearLayout
+                    android:id="@+id/lobi_setting_general_searchable_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.kayac.libnakamap.components.DividerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.kayac.libnakamap.components.ListRow
+                        android:id="@+id/lobi_setting_general_searchable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                        lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                        lobi:lobi_leftContentVisible="false"
+                        lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_checkbox" />
+                </LinearLayout>
+
+                <com.kayac.libnakamap.components.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!-- ブロックユーザリスト -->
+
+                <com.kayac.libnakamap.components.ListRow
+                    android:id="@+id/lobi_setting_general_block_user_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                    lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                    lobi:lobi_leftContentVisible="false"
+                    lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_multiple_selection" />
+
+                <com.kayac.libnakamap.components.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/lobi_setting_general_recive_information_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/lobi_setting_general_recive_friend_information_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <com.kayac.libnakamap.components.SectionView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            lobi:lobi_section_title="@string/lobi_receive_information" />
+
+                        <!-- Friends Information -->
+
+                        <com.kayac.libnakamap.components.ListRow
+                            android:id="@+id/lobi_setting_general_recive_friends_information"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                            lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                            lobi:lobi_leftContentVisible="false"
+                            lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_checkbox" />
+                    </LinearLayout>
+                    <!-- News Information -->
+
+                    <LinearLayout
+                        android:id="@+id/lobi_setting_general_recive_news_information_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <com.kayac.libnakamap.components.DividerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <com.kayac.libnakamap.components.ListRow
+                            android:id="@+id/lobi_setting_general_recive_news_information"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                            lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                            lobi:lobi_leftContentVisible="false"
+                            lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_checkbox" />
+                    </LinearLayout>
+
+                    <!-- Disclaimer Information -->
+
+                    <LinearLayout
+                        android:id="@+id/lobi_setting_general_recive_information_disclaimer_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <com.kayac.libnakamap.components.DividerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/lobi_setting_general_recive_information_disclaimer_text"
+                            style="@style/lobi_textview_gray_small_shadow_white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/lobi_padding_middle"
+                            android:text="@string/lobi_you_may" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.kayac.libnakamap.components.SectionView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_section_title="@string/lobi_about_lobi" />
+
+                <com.kayac.libnakamap.components.ListRow
+                    android:id="@+id/lobi_menu_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                    lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                    lobi:lobi_leftContentVisible="false"
+                    lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_arrow" />
+
+                <com.kayac.libnakamap.components.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.kayac.libnakamap.components.ListRow
+                    android:id="@+id/lobi_setting_general_othre_terms_of_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                    lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                    lobi:lobi_leftContentVisible="false"
+                    lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_arrow" />
+
+                <com.kayac.libnakamap.components.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.kayac.libnakamap.components.ListRow
+                    android:id="@+id/lobi_setting_general_help_faq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                    lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                    lobi:lobi_leftContentVisible="false"
+                    lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_arrow" />
+
+                <com.kayac.libnakamap.components.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.kayac.libnakamap.components.ListRow
+                    android:id="@+id/lobi_setting_general_othre_acknowledgments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                    lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                    lobi:lobi_leftContentVisible="false"
+                    lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_arrow" />
+
+                <com.kayac.libnakamap.components.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.kayac.libnakamap.components.ListRow
+                    android:id="@+id/lobi_menu_blog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                    lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                    lobi:lobi_leftContentVisible="false"
+                    lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_arrow" />
+
+                <com.kayac.libnakamap.components.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.kayac.libnakamap.components.ListRow
+                    android:id="@+id/lobi_menu_contact_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                    lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                    lobi:lobi_leftContentVisible="false"
+                    lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_arrow" />
+
+                <com.kayac.libnakamap.components.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.kayac.libnakamap.components.ListRow
+                    android:id="@+id/lobi_menu_bind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                    lobi:lobi_contentBackground="@drawable/lobi_setting_row_selector"
+                    lobi:lobi_leftContentVisible="false"
+                    lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_arrow" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <com.kayac.libnakamap.components.AdComponent
+        android:id="@+id/lobi_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lobi:lobi_adPageId="android_sdk_menu" />
+
+</LinearLayout>

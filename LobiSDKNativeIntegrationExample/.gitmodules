@@ -1,0 +1,3 @@
+[submodule "jni/lobijni/parson"]
+	path = jni/lobi/parson
+	url = https://github.com/kgabis/parson.git

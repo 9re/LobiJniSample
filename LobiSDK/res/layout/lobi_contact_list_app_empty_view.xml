@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lobi="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lobi_contact_list_empty_view_add_contact_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.kayac.libnakamap.components.ListRow
+            android:id="@+id/lobi_contact_list_empty_view_add_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+            lobi:lobi_leftContentLayoutId="@layout/lobi_list_row_content_image_view"
+            lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_arrow" />
+
+        <com.kayac.libnakamap.components.DividerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/lobi_contact_list_empty_view_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/lobi_noimage_friend" />
+
+            <TextView
+                android:id="@+id/lobi_contact_list_empty_view_description"
+                style="@style/lobi_textview_gray_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="24dp"
+                android:gravity="center"
+                android:text="@string/lobi_klm_has_no_friend_description" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

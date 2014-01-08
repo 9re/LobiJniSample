@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lobi="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lobi_bg_light_repeat"
+    android:orientation="vertical" >
+
+    <com.kayac.libnakamap.components.ActionBar
+        android:id="@+id/lobi_action_bar"
+        style="@style/lobi_action_bar"
+        lobi:lobi_content_type="lobi_backable"
+        lobi:lobi_text="@string/lobi_profile" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <FrameLayout
+            android:id="@+id/lobi_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!-- 友だちになる -->
+
+        <FrameLayout
+            android:id="@+id/lobi_profile_profile_activity_add_friend_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/lobi_padding_high"
+            android:paddingLeft="@dimen/lobi_padding_high"
+            android:paddingTop="@dimen/lobi_padding_high"
+            android:background="@drawable/lobi_profile_add_friend_list_row_background_selector"
+            android:visibility="gone" >
+
+            <com.kayac.libnakamap.components.ListRow
+                android:id="@+id/lobi_profile_profile_activity_add_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                lobi:lobi_leftContentLayoutId="@layout/lobi_list_row_content_image_view"
+                lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+                lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_white_arrow"
+                android:visibility="visible" />
+        </FrameLayout>
+    </FrameLayout>
+    <!-- AD -->
+
+    <com.kayac.libnakamap.components.AdComponent
+        android:id="@+id/lobi_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lobi:lobi_adPageId="android_profile"
+        lobi:lobi_autoLoad="false" />
+
+</LinearLayout>

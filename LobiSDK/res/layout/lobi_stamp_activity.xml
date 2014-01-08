@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lobi="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lobi_bg_light_repeat"
+    android:orientation="vertical" >
+
+    <com.kayac.libnakamap.components.ActionBar
+        android:id="@+id/lobi_action_bar"
+        style="@style/lobi_action_bar"
+        lobi:lobi_content_type="lobi_backable"
+        lobi:lobi_text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lobi_stamp_category_thumb_height"
+        android:background="@color/lobi_white_true"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/lobi_stamp_shout_area"
+            android:layout_width="@dimen/lobi_stamp_category_thumb_width"
+            android:layout_height="@dimen/lobi_stamp_category_thumb_height"
+            android:background="@color/lobi_white_true" >
+
+            <com.kayac.libnakamap.activity.chat.ChatEditShoutButton
+                android:id="@+id/lobi_stamp_shout_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <com.kayac.libnakamap.components.HorizontalElementScroller
+            android:id="@+id/lobi_stamp_category_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffff00ff" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/lobi_img_shadow" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/lobi_bg_light_repeat" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/lobi_stamp_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <GridView
+                android:id="@+id/lobi_stamp_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="4"
+                android:verticalSpacing="@dimen/lobi_stamp_vertical_spacing" />
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+
+    <!-- AD -->
+
+    <com.kayac.libnakamap.components.AdComponent
+        android:id="@+id/lobi_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        lobi:lobi_adPageId="android_sdk_stamp"
+        lobi:lobi_autoLoad="false" />
+
+</LinearLayout>

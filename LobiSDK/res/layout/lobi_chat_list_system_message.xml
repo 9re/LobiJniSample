@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- parent LinearLayout seems to be useless but marginTop not applied
+         without parent layout on 2.3.x -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/lobi_white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/lobi_line_gray_horizontal_repeat" />
+
+        <TextView
+            android:id="@+id/lobi_chat_list_system_message_time"
+            style="@style/lobi_textview_gray_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:gravity="center_horizontal"
+            android:text="12/07/30 11:30" />
+
+        <com.kayac.libnakamap.components.CustomTextView
+            android:id="@+id/lobi_chat_list_system_message_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginTop="4dp"
+            android:autoLink="all"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/lobi_padding_high"
+            android:paddingRight="@dimen/lobi_padding_high" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/lobi_line_gray_horizontal_repeat" />
+    </LinearLayout>
+
+</LinearLayout>

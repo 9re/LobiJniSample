@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/lobisdk_badge_background_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/lobisdk_background_chat" />
+
+    <TextView
+        android:id="@+id/lobisdk_badge_unread_groups_text"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="#000000"
+        android:textSize="8sp" />
+
+</FrameLayout>

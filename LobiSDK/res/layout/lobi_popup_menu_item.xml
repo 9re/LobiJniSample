@@ -1,0 +1,10 @@
+<com.kayac.libnakamap.components.ListRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lobi="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    lobi:lobi_leftContentLayoutId="@layout/lobi_list_row_content_popup_menu_icon"
+    lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line"
+    lobi:lobi_rightContentLayoutId="@layout/lobi_list_row_content_image_view"
+    lobi:lobi_contentBackground="@drawable/lobi_bg_menu_repeat"
+    />

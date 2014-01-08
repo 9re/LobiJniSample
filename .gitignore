@@ -1,0 +1,8 @@
+local.properties
+
+obj/
+*.o
+*.so
+
+bin/
+gen/

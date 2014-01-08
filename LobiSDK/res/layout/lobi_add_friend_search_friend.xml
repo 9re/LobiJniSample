@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lobi="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lobi_bg_light_repeat"
+    android:orientation="vertical" >
+
+    <com.kayac.libnakamap.components.ActionBar
+        android:id="@+id/lobi_action_bar"
+        style="@style/lobi_action_bar"
+        lobi:lobi_content_type="lobi_backable"
+        lobi:lobi_text="@string/lobi_search_lobi" />
+
+    <com.kayac.libnakamap.components.SearchBox
+        android:id="@+id/lobi_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lobi:lobi_closeButton="false"
+        lobi:lobi_searchHintText="@string/lobi_search_lobi" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/lobi_img_shadow" />
+
+    <ListView
+        android:id="@+id/lobi_search_friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/lobi_line_drawable"
+        android:dividerHeight="@dimen/lobi_section_divider_with_padding"
+        android:fastScrollEnabled="true"
+        android:scrollbars="none" />
+
+</LinearLayout>

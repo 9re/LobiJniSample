@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <array name="lobi_change_wallpaper">
+    <item>@string/lobi_restore_defaults</item>
+    <item>@string/lobi_select_picture</item>
+  </array>
+  <array name="lobi_group_list_fixed_tab_icons">
+    <item>@drawable/lobi_icn_tab_lock_selector</item>
+    <item>@drawable/lobi_icn_tab_open_selector</item>
+  </array>
+  <array name="lobi_group_list_fixed_tab_titles">
+    <item>@string/lobi_private_groups</item>
+    <item>@string/lobi_public_groups</item>
+  </array>
+  <array name="lobi_list_popup_window_icon">
+    <item>@drawable/lobi_ico_friendlist_menu_selector</item>
+    <item>@drawable/lobi_ico_profile_menu_selector</item>
+    <item>@drawable/lobi_ico_setting_menu_selector</item>
+    <item>@drawable/lobi_ico_help_menu_selector</item>
+    <item>@drawable/lobi_icn_invite_menu_selector</item>
+    <item>@drawable/lobi_icn_menu_lobi</item>
+  </array>
+  <array name="lobi_list_popup_window_id">
+    <item>@id/lobi_popup_menu_friendlist</item>
+    <item>@id/lobi_popup_menu_profile</item>
+    <item>@id/lobi_popup_menu_setting</item>
+    <item>@id/lobi_popup_menu_help</item>
+    <item>@id/lobi_popup_menu_invite_friends</item>
+    <item>@id/lobi_popup_menu_bind</item>
+  </array>
+  <string-array name="lobi_androidmanifest_resources">
+    <item>@string/lobi_chat_streaming</item>
+  </string-array>
+  <string-array name="lobi_list_popup_window_label">
+    <item>@string/lobi_contacts_list</item>
+    <item>@string/lobi_profile</item>
+    <item>@string/lobi_settings</item>
+    <item>@string/lobi_help</item>
+    <item>@string/lobi_sdk_menu_invite_friend</item>
+    <item>@string/lobi_connect_with_app</item>
+  </string-array>
+</resources>

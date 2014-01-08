@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lobi_action_bar_background_selector_01"
+    android:orientation="horizontal" >
+
+    <!-- ACCOUNT ICON -->
+
+    <view
+        android:id="@+id/lobi_action_bar_account_icon"
+        android:layout_width="@dimen/lobi_icon_small"
+        android:layout_height="@dimen/lobi_icon_small"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/lobi_margin_middle"
+        android:layout_marginTop="1dp"
+        class="com.kayac.libnakamap.components.ActionBar$AccountThumbnail"
+        android:scaleType="fitXY" />
+    <!-- ACCOUNT NAME -->
+
+    <TextView
+        android:id="@+id/lobi_action_bar_account_name"
+        style="@style/lobi_textview_white_very_large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/lobi_margin_middle"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_weight="1.0" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/lobi_icon_small"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/lobi_margin_middle"
+        android:layout_marginRight="@dimen/lobi_margin_middle"
+        android:layout_marginTop="2dp" >
+
+        <ImageView
+            android:id="@+id/lobi_action_bar_account_down_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/lobi_icn_actionbar_down" />
+    </FrameLayout>
+
+</LinearLayout>

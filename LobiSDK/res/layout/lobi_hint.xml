@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="16dp"
+    android:paddingLeft="@dimen/lobi_padding_high"
+    android:paddingRight="@dimen/lobi_padding_high"
+    android:paddingBottom="@dimen/lobi_padding_high"
+    android:background="@drawable/lobi_base_flick"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/lobi_margin_high"
+        android:src="@drawable/lobi_img_flick" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/lobi_padding_high"            
+        android:text="@string/lobi_you_can_switch"
+        style="@style/lobi_textview_black_default_shadow_white"
+        />
+</LinearLayout>

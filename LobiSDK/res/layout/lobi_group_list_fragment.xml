@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lobi_bg_light_repeat" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lobi_group_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp" >
+
+            <TextView
+                android:id="@+id/lobi_group_list_no_groups_first"
+                style="@style/lobi_textview_gray_very_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/lobi_you_havent"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lobi_group_list_no_groups_second"
+                style="@style/lobi_textview_gray_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lobi_margin_highest"
+                android:layout_marginRight="@dimen/lobi_margin_highest"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/lobi_padding_low"
+                android:text="@string/lobi_why"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/lobi_group_list_zero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lobi_group_list_hot_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.kayac.libnakamap.components.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/lobi_padding_middle"
+                    android:layout_marginTop="@dimen/lobi_padding_middle" />
+
+                <TextView
+                    style="@style/lobi_textview_brown_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/lobi_padding_low"
+                    android:paddingLeft="@dimen/lobi_padding_middle"
+                    android:text="test Popular groups" />
+
+                <ListView
+                    android:id="@+id/lobi_group_popular_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="true"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
