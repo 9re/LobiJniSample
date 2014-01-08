@@ -10,7 +10,6 @@ LOCAL_CFLAGS := -std=c99
 LOCAL_LDFLAGS := -llog -landroid
 LOCAL_SRC_FILES := \
     parson/parson.c \
-    jni_helper.c \
     lobi.c
 LOCAL_STATIC_LIBRARIES := android_native_app_glue
 

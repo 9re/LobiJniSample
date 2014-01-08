@@ -1,5 +1,4 @@
 #include "lobi.h"
-#include "jni_helper.h"
 
 #include "log.h"
 

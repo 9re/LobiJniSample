@@ -23,7 +23,7 @@ include $(LOCAL_PATH)/lobi/Android.mk
 
 include $(CLEAR_VARS)
 LOCAL_PATH := $(root_LOCAL_PATH)
-LOCAL_MODULE    := native-plasma
+LOCAL_MODULE    := native
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/utils \
     $(LOCAL_PATH)/lobi \

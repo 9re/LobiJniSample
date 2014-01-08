@@ -29,7 +29,6 @@
 #include "parson.h"
 #include "lobi.h"
 #include "log.h"
-#include "jni_helper.h"
 
 /**
  * Our saved state data.

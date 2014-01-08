@@ -1,3 +1,7 @@
 bin/
 gen/
+obj/
 .settings/
+
+local.properties
+*.so
